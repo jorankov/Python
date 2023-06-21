@@ -10,15 +10,15 @@ The output should display the modified schedule (AM or PM, depending on the modi
 def add_time(start: str, duration: str, day: str = ""):
     duration = duration.split(":")
 
-    time_split = start.split(":")  # Separa los elementos por :
-    hours = time_split[0]  # Devuelve la hora
-    mins_split = time_split[1].split()  # Separa minutos del AM/PM
-    mins = mins_split[0]  # Devuelve los minutos
+    time_split = start.split(":")  # Split the elements by :
+    hours = time_split[0]  # Returns the hour
+    mins_split = time_split[1].split()  # Split minutes from AM/PM
+    mins = mins_split[0]  # Returns the minutes
 
-    am_pm = mins_split[1]  # Devuelve AM/PM
+    am_pm = mins_split[1]  # Returns AM/PM
 
-    hours_duration = duration[0]  # Hora de la duracion
-    mins_duration = duration[1]  # Minutos de la duracion
+    hours_duration = duration[0]  # Duration hour
+    mins_duration = duration[1]  # Duration minutes
 
     days = [
         "Monday",
