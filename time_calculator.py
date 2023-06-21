@@ -1,14 +1,10 @@
-""" El siguiente programa simula cómo se modifica un horario de inicio con respecto a una duración determinada,
-de acuerdo al día que se le dé como input 
+"""The following program simulates how a start time is modified based on a given duration, according to the day provided as input.
 
-start = horario de inicio
-duration = tiempo que se le agregará a start
-day = día en el que inicia el horario
+start = start time
+duration = time to be added to start
+day = day on which the schedule starts
 
-el output deberá mostrar el horario modificado 
-(AM o PM, depende de la modificación del resultado final).
-Si el horario superó las 12PM, el día también será modificado.
-"""
+The output should display the modified schedule (AM or PM, depending on the modification of the final result). If the time exceeds 12 PM, the day will also be modified."""
 
 
 def add_time(start: str, duration: str, day: str = ""):
